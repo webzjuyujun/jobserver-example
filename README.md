@@ -15,5 +15,5 @@ curl -d "command=create" 'http://localhost:8090/jobs?appName=test01&classPath=co
 namedDataFrame 
 curl --data-binary @jobserver-test-1.0-SNAPSHOT.jar http://localhost:8090/jars/test02
 curl -d "" 'http://localhost:8090/contexts/test_context_03?num-cpu-cores=1&memory-per-node=512m'
-curl   -d "" 'http://localhost:8090/jobs?appName=test02&classPath=com.jd.local.test.jobserver.NamedObjectTest&context=test_context_03&sync=true'
-curl   -d "" 'http://localhost:8090/jobs?appName=test02&classPath=com.jd.local.test.jobserver.NamedObjectTestGet&context=test_context_03'
+curl -d "" 'http://localhost:8090/jobs?appName=test02&classPath=com.jd.local.test.jobserver.NamedObjectTest&context=test_context_03&sync=true'
+curl -d "" 'http://localhost:8090/jobs?appName=test02&classPath=com.jd.local.test.jobserver.NamedObjectTestGet&context=test_context_03'
